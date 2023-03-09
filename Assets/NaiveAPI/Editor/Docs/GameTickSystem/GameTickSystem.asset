@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b1c19eb373eb44a4af20652592e29, type: 3}
+  m_Name: GameTickSystem
+  m_EditorClassIdentifier: 
+  Name: GameTickSystem
+  DocType: 7
+  MenuIcon: {fileID: 2800000, guid: 76774998762b98c4795f138bab921303, type: 3}
+  SubPages:
+  - {fileID: 11400000, guid: 8250b141377b7b642a5acba61a6224cf, type: 2}
+  - {fileID: 11400000, guid: 1c4e29559bfb1e748b0c9abbfcf0729e, type: 2}
+  - {fileID: 11400000, guid: 5419fc40f2aa8ed4fb1dd6bfc2bbb2dd, type: 2}
+  - {fileID: 11400000, guid: c644bfebc3619514f9c94fd6abd8d3b4, type: 2}
+  Components:
+  - ComponentType: 3
+    Text:
+    - Usage
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - "With this manager, you can controll script's Update\n that contain ITickUpdate
+      interface.\r\n\n\rControllable things\n- Game Speed\n- Script\u2019s update
+      frequency"
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Inspector GUI
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: ae418a8c417399440a18b67f233a2233, type: 3}
+  - ComponentType: 5
+    Text:
+    - Tick Per Sec %column%Defined how many tick in a second.\nit's a const value
+    - "Tick Rate%column%Defined Game\u2019s tick rate now,\\nit can be change while
+      game is running."
+    - Current Tick%column%While Game is running, it increase by TickRate
+    - Current Real Tick%column%While Game is running, it increase by TickPerSec
+    - Current Time %column%Time from start up
+    Picture: {fileID: 0}

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b1c19eb373eb44a4af20652592e29, type: 3}
+  m_Name: Angle
+  m_EditorClassIdentifier: 
+  Name: Angle
+  DocType: 1
+  MenuIcon: {fileID: 2800000, guid: a701817c8dd65c54c819e08fac8e2daf, type: 3}
+  SubPages:
+  - {fileID: 11400000, guid: d5d24dd5d61e0284088bbc5e1f5eaf92, type: 2}
+  - {fileID: 11400000, guid: f8bcaae1d69f3e54ea6f552743421ff7, type: 2}
+  Components:
+  - ComponentType: 3
+    Text:
+    - Description
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - this is a struct can store angle into -180/180
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Properties
+    Picture: {fileID: 0}
+  - ComponentType: 5
+    Text:
+    - Type%column%Name%column%Get%column%Set%column%Usage
+    - "float%column%Degree%column%   \u25A0%column%   \u25A0%column%get angle from
+      -180 to 180"
+    - "float%column%Radians%column%   \u25A0%column%   \u25A0%column%get angle from
+      -180 to 180 in radians"
+    - "Vector3%column%Axis%column%   \u25A0%column%   \u25A0%column%rotate the object
+      around the axis"
+    - "float %column%Degree360%column%   \u25A0%column%%column%get angle from 0 to
+      360"
+    - "Vector2%column%Coordinate%column%   \u25A0%column%   \u25A0%column%the unit
+      coordinate on quadrant diagram as a Vector2"
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Methods
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - Angle
+    - Position2Angle
+    - 'Return class Angle with the angle of the two vectors and the axis which is
+      perpendicular
+
+      to the two vectors.'
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - void
+    - SpinGameObject
+    - check detail in extension method
+    Picture: {fileID: 0}

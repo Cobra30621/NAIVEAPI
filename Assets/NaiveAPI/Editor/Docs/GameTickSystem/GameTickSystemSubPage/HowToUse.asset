@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b1c19eb373eb44a4af20652592e29, type: 3}
+  m_Name: HowToUse
+  m_EditorClassIdentifier: 
+  Name: HowToUse
+  DocType: 3
+  MenuIcon: {fileID: 2800000, guid: 54906a133ca94774c9c75afc5dd05e53, type: 3}
+  SubPages: []
+  Components:
+  - ComponentType: 3
+    Text:
+    - 1 Create Manager Object
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - '1.1 Create a new gameObject
+
+'
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.87
+    Picture: {fileID: 2800000, guid: c1a64ef7f4216ea4f861bd9b62e98944, type: 3}
+  - ComponentType: 0
+    Text:
+    - '
+
+
+      1.2 Add GameTickManager Script'
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: 522f5c7dfa21c91498d47f4f8fcddb56, type: 3}
+  - ComponentType: 0
+    Text:
+    - '
+
+
+      1.3 Setting with inspector'
+    Picture: {fileID: 2800000, guid: 28fb7f0af6bd9e143b092dc294435186, type: 3}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: b6b5bfdf32829ba40b2efe728d98e91e, type: 3}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - While Coding
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - 1. Create New Script from Assets/Create/NaiveAPI/C# Tick Script
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.63
+    Picture: {fileID: 2800000, guid: 3035bf5c8c0dc4844aa44880a699e7c9, type: 3}
+  - ComponentType: 0
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - 2. Setting update frequency
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - 
+    - ITickUpdate.Start
+    - 'int
+
+      frequence = 0'
+    - 'Change tickUpdate.Start()''s param.
+
+      Default is Update TickRate.'
+    Picture: {fileID: 0}
+  - ComponentType: 5
+    Text:
+    - Input%column%usage
+    - 0%column%It will update with RealTick
+    - 1%column%It will update with TickRate
+    - '>= 2%column%It will update with TickRate \nin custom frequence'
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - If you want to add ITickUpdate by yourself...
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - "1. Add Interface \u201CITickUpdate\u201D."
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: c36e1300b8a39e144bb9ce6dd3853fab, type: 3}
+  - ComponentType: 0
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - 2. Coding in TickUpdate() (same as in Update()).
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: 6d903c87fa84da24894fdef14ad7e5ce, type: 3}
+  - ComponentType: 0
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - "3. Subscribe to GameTickManager at Start().\n    Do  not  invoke  this  in 
+      Awake()  if  you  can't ensure that\n    this Awake is always slower than GameTick's
+      Manager"
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: 0920bbcb63bd3bc419bd58f040e07499, type: 3}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Things you have to know
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - 'Do not use(Input.GetKey(KeyCode.Mouse0))  it make many problem
+
+      Use
+      the function below to replace it.'
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - bool
+    - GameTick.GetKey
+    - 'KeyCode
+
+      keyCode'
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - bool
+    - GameTick.GetKeyUp
+    - 'KeyCode
+
+      keyCode'
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - bool
+    - GameTick.GetKeyDown
+    - 'KeyCode
+
+      keyCode'
+    - '
+
+'
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - "You can use tickUpdate.Close() or GameTick.UnSubscribe to stop \nupdate this
+      script, it can be restart by use Start() again."
+    Picture: {fileID: 0}

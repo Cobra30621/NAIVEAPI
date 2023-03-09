@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label text="Hi !" display-tooltip-when-elided="true" focusable="true" style="font-size: 50px; -unity-font-style: bold;" />
+    <ui:VisualElement name="MAX" style="height: 302px;">
+        <ui:VisualElement style="flex-grow: 1; flex-shrink: 1; flex-basis: 100%;" />
+    </ui:VisualElement>
+    <NaiveAPI.ItemSystem.InventorySlotVisual slot-size="182" number-size="6" count-text-size="44" count-text-anchor="LowerRight" name="slot1" theme="project://database/Assets/NaiveAPI/Runtime/InventorySystem/DefaultTheme/DefaultInventorySlotTheme.asset?fileID=11400000&amp;guid=f48e7e54307640140b5531fea3a63ceb&amp;type=2#DefaultInventorySlotTheme" style="height: 110px; width: 133px; flex-direction: column; margin-left: 52px;" />
+</ui:UXML>

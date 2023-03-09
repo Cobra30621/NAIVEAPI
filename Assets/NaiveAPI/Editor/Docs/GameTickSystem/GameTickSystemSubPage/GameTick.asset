@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b1c19eb373eb44a4af20652592e29, type: 3}
+  m_Name: GameTick
+  m_EditorClassIdentifier: 
+  Name: GameTick
+  DocType: 1
+  MenuIcon: {fileID: 2800000, guid: a701817c8dd65c54c819e08fac8e2daf, type: 3}
+  SubPages: []
+  Components:
+  - ComponentType: 3
+    Text:
+    - Description
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - "It is a Singleton GameObject.\r\nWith this manager, you can controll\nscripts
+      that contain ITickUpdate interface.\r\n\r\nControllable things\r\n\r  - Game
+      Speed\r\n  - Script\u2019s update frequency"
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Static Properties
+    Picture: {fileID: 0}
+  - ComponentType: 5
+    Text:
+    - Type%column%Name%column%Get%column%Set%column%Usage
+    - "int%column%TickPerSec%column%   \u25A0%column%%column%How many Tick in a secend"
+    - "int%column%TickRate%column%   \u25A0%column%   \u25A0%column%How many TickRate
+      in a secend"
+    - "float%column%GameSpeed %column%   \u25A0%column%   \u25A0%column%TickRate
+      / TickPerSec"
+    - "int%column%CurrentTick%column%   \u25A0%column%%column%Tick in runtime"
+    - "int%column%CurrentRealTick%column%   \u25A0%column%%column%RealTick in runtime"
+    - "float%column%CurrentTime%column%   \u25A0%column%%column%Time since GameTick
+      startup (sec)"
+    - "float%column%DeltaTime%column%   \u25A0%column%%column%Same as Time.deltaTime"
+    - "float%column%DeltaTickTime%column%   \u25A0%column%%column%DeltaTime through
+      this Tick"
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - UpdateList Data
+    Picture: {fileID: 0}
+  - ComponentType: 5
+    Text:
+    - Type%column%Name%column%Usage
+    - List<TickUpdateInfo>%column%TickUpdatesList%column%Func update list
+    - List<ITickUpdate>%column%TickUpdatesList[0]%column%update with RealTick
+    - List<ITickUpdate>%column%TickUpdatesList[1]%column%update with frquence = 1
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Static Methods
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - void
+    - Initialize
+    - 'Init / Restart the GameTickSystem
+
+'
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - void
+    - Subscribe
+    - 'ITickUpdate
+
+      tickUpdate'
+    - 'Start a TickUpdate script
+
+'
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - void
+    - UnSubscribe
+    - 'ITickUpdate
+
+      tickUpdate'
+    - 'Close a TickUpdate script
+
+'
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - bool
+    - GetKey
+    - 'KeyCode
+
+      keyCode'
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - bool
+    - GetKeyUp
+    - 'KeyCode
+
+      keyCode'
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - bool
+    - GetKeyDown
+    - 'KeyCode
+
+      keyCode'
+    - 
+    Picture: {fileID: 0}

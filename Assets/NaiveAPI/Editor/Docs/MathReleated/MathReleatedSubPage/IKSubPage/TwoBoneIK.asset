@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b1c19eb373eb44a4af20652592e29, type: 3}
+  m_Name: TwoBoneIK
+  m_EditorClassIdentifier: 
+  Name: TwoBoneIK
+  DocType: 1
+  MenuIcon: {fileID: 2800000, guid: a701817c8dd65c54c819e08fac8e2daf, type: 3}
+  SubPages: []
+  Components:
+  - ComponentType: 3
+    Text:
+    - Description
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - " A MonoBehaviour script for simple two bone IK problen.\n\nYou can checkout 
+      the  example  code  for multi-legged \ncreature in the example scene.\n\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\nThis
+      class and sample still need to improve\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\""
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Setup
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.63
+    Picture: {fileID: 2800000, guid: 681285d2ff1fee3429217e236ecfb466, type: 3}
+  - ComponentType: 5
+    Text:
+    - Begin%column%1st bone's root
+    - Mid%column%point between 2 bones
+    - End%column%2nd bone's root
+    - Target%column%
+    - Pole%column%define spin plane (Pole & Target & Begin)
+    - Upper Rotation%column%bone betwen begin and mid's rotation
+    - Lower Rotation%column%bone betwen mid and end's rotation
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - 'GameObject struct in picture above.
+
+'
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: 6720e6121c9284747bde2a2bb3ac56f5, type: 3}

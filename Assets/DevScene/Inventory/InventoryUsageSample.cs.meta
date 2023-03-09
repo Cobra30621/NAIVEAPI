@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c41e98a1ad98bfe42b002e977964cd14
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - circle: {instanceID: 0}
+  - square: {instanceID: 0}
+  - correct: {instanceID: 0}
+  - target: {instanceID: 0}
+  - focusHighlight: {instanceID: 0}
+  - testRecipe: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

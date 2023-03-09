@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b1c19eb373eb44a4af20652592e29, type: 3}
+  m_Name: SecondOrder
+  m_EditorClassIdentifier: 
+  Name: SecondOrder
+  DocType: 1
+  MenuIcon: {fileID: 2800000, guid: a701817c8dd65c54c819e08fac8e2daf, type: 3}
+  SubPages:
+  - {fileID: 11400000, guid: 9e0cac379a18fae46be5872e6c72ffd8, type: 2}
+  - {fileID: 11400000, guid: 0f65bf3ea4a107d4ea6493f96500c4e7, type: 2}
+  - {fileID: 11400000, guid: 9dfaacd40ff99ba45a9ea1bb8185ade9, type: 2}
+  - {fileID: 11400000, guid: 404abadef43cef543b06a4400a76852d, type: 2}
+  - {fileID: 11400000, guid: 67565bc2893c63f4c9aea5488f50d7b2, type: 2}
+  - {fileID: 11400000, guid: 2d15fbe10caf7394eb48adc6914a9060, type: 2}
+  Components:
+  - ComponentType: 3
+    Text:
+    - Controller Equation
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.7
+    Picture: {fileID: 2800000, guid: cd0238455144f6b40ab2ec9d7635cc5f, type: 3}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Description
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - "With this controller you can create lot of movement beheavior,\nEasy to adjust
+      by change value of F, Z, R, Spd.\n    - F for Reflection frequency\n    - Z
+      for Error correction strength\n    - R for Initial reflection direction\n   
+      - Spd as speed weight"
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Properties
+    Picture: {fileID: 0}
+  - ComponentType: 5
+    Text:
+    - Type%column%Name%column%Get%column%Set%column%Usage
+    - "float%column%F%column%   \u25A0%column%%column%paramter for controller"
+    - "float%column%Z%column%   \u25A0%column%%column%paramter for controller"
+    - "float%column%R%column%   \u25A0%column%%column%paramter for controller"
+    - "float%column%K1%column%   \u25A0%column%%column%weight for equation"
+    - "float%column%K2%column%   \u25A0%column%%column%weight for equation"
+    - "float%column%K3%column%   \u25A0%column%%column%weight for equation"
+    - "float%column%TwoPiF%column%   \u25A0%column%%column%return 2*PI*F"
+    - "float%column%D%column%   \u25A0%column%%column%return TwoPiF * Sqrt(Abs(Z
+      * Z - 1))"
+    - "float%column%NowY%column%   \u25A0%column%%column%value position now"
+    - "float%column%Velocity%column%   \u25A0%column%%column%as value of y delta"
+    - "float%column%Target%column%   \u25A0%column%%column%target value"
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 3
+    Text:
+    - Methods
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - void
+    - Init
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - float
+    - Update
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - Texture2D
+    - GetGraph
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 2
+    Text:
+    - SecondOrderController
+    - Copy
+    - 
+    Picture: {fileID: 0}

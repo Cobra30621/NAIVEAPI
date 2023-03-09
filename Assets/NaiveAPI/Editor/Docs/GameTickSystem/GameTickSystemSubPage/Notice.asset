@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48b1c19eb373eb44a4af20652592e29, type: 3}
+  m_Name: Notice
+  m_EditorClassIdentifier: 
+  Name: Things To Notice about GetKey()
+  DocType: 4
+  MenuIcon: {fileID: 2800000, guid: fca640037a0513a49b8928326ed227b4, type: 3}
+  SubPages: []
+  Components:
+  - ComponentType: 3
+    Text:
+    - Why GetKey make problem in GameTickSystem
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: cada5705ac065234793459bf723b620f, type: 3}
+  - ComponentType: 0
+    Text:
+    - "GetKeyDown() & GetKeyUp() change value in only one frame,\r\nAnd GameTickManager
+      doesn\u2019t update with Unity\u2019s Update(),\r\nThan it will return the
+      wrong value. (Actually is the value we don\u2019t want)\r"
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.75
+    Picture: {fileID: 2800000, guid: 6e52a39aef178834699201ad42317f89, type: 3}
+  - ComponentType: 0
+    Text:
+    - "To solve this problem, I extended its signal to match the different update
+      frequency.\r\n( Also the custom frequency, that\u2019s most annoying )"
+    Picture: {fileID: 0}
+  - ComponentType: 6
+    Text:
+    - 
+    Picture: {fileID: 0}
+  - ComponentType: 0
+    Text:
+    - So when you need to use Input.GetKey() use this instead.
+    Picture: {fileID: 0}
+  - ComponentType: 4
+    Text:
+    - 0.97
+    Picture: {fileID: 2800000, guid: 149c233b08347d24a96ab8353a56d63e, type: 3}
+  - ComponentType: 0
+    Text:
+    - 
+    Picture: {fileID: 0}

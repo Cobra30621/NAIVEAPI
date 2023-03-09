@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d177ae08ae242ed4996917a1e6d517f7, type: 3}
+  m_Name: LootPool
+  m_EditorClassIdentifier: 
+  lootBags:
+  - percent: 40
+    isLimited: 1
+    Loots:
+      Slots:
+      - ItemStack:
+          Item: {fileID: 11400000, guid: afa850e05d77d8a4b925dad9862607a3, type: 2}
+          Count: 10
+      size: 1
+      count: 1
+      unUseindex: 
+  - percent: 40
+    isLimited: 1
+    Loots:
+      Slots:
+      - ItemStack:
+          Item: {fileID: 11400000, guid: c2aaf201279400d43afc388ee53d8031, type: 2}
+          Count: 5
+      - ItemStack:
+          Item: {fileID: 11400000, guid: a77bac044f5807849af7894ed022a7b0, type: 2}
+          Count: 5
+      size: 2
+      count: 2
+      unUseindex: 
+  - percent: 50
+    isLimited: 1
+    Loots:
+      Slots:
+      - ItemStack:
+          Item: {fileID: 11400000, guid: e1a06e6f4b16084459bd42198ca09232, type: 2}
+          Count: 3
+      - ItemStack:
+          Item: {fileID: 11400000, guid: 1942f6361e571ba4ca6550d83f95270e, type: 2}
+          Count: 3
+      size: 2
+      count: 2
+      unUseindex: 
+  - percent: 20
+    isLimited: 1
+    Loots:
+      Slots:
+      - ItemStack:
+          Item: {fileID: 11400000, guid: 730993be1e25eb04d9a6344627377792, type: 2}
+          Count: 2
+      - ItemStack:
+          Item: {fileID: 11400000, guid: 98dacd2c292964e41a683548379f028f, type: 2}
+          Count: 2
+      size: 2
+      count: 2
+      unUseindex: 
+  - percent: 20
+    isLimited: 1
+    Loots:
+      Slots:
+      - ItemStack:
+          Item: {fileID: 11400000, guid: f52183566975e2d4495b9dc9628dde4f, type: 2}
+          Count: 1
+      size: 1
+      count: 1
+      unUseindex: 
+  EmptyBehavior: 1
